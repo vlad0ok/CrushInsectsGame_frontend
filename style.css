@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Bebas Neue', sans-serif;
+    --primary-color: #fff;
+    --secondary-color: #333333;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.screen.visible {
+    display: flex;
+}
+
+.btn {
+    font-family: 'Bebas Neue', sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.restart-btn {
+    position: absolute;
+    top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.restart-btn:hover {
+    background-color: darkred;
+    color: var(--primary-color);
+}
+
+.insects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.insects-list li {
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+
+}
+
+.choose-insect-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.choose-insect-btn img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.game-container {
+    position: relative;
+}
+
+.time, 
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.insect {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .screen {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 0 auto;
+    }
+
+    .insect {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .time,
+    .score {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .screen {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 7px 14px;
+        margin: 0 auto;
+    }
+
+    .insect {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+    }
+
+    .time,
+    .score {
+        font-size: 13px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .screen {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 6px 12px;
+        margin: 0 auto;
+    }
+
+    .insect {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .time,
+    .score {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+}

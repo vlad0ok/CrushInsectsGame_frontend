@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CrushInsectsGame</title>
+</head>
+<body>
+    <div class="screen visible">
+        <h2>Game "Crush Insects"</h2>
+        <button class="btn" id="start-btn">Start</button>
+    </div>
+
+    <div class="screen">
+        <h2>Choose who to crush</h2>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Cockroache</p>
+                    <img src="images/cockroaches.png" alt="Cockroache">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mucha</p>
+                    <img src="images/mucha.png" alt="Mucha">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mosquito</p>
+                    <img src="images/mosquito.png" alt="Mosquito">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Spider</p>
+                    <img src="images/spider.png" alt="Spider">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Worm</p>
+                    <img src="images/worm.png" alt="Worm">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+        <h3 id="time" class="time">Time: 0</h3>
+        <button class="restart-btn" id="restart-btn">Restart</button>
+        <h3 id="score" class="score">Score: 0</h3>
+    </div>
+
+    <audio id="audio" src="assets/audio.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
